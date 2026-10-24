@@ -1,0 +1,45 @@
+# Case-study content for Luke's portfolio. Every fact here came from Luke, his resume or his old Google Site.
+# Keep each field short: one sentence for problem and result, short phrases for the lists.
+CASES = {
+"rocketry": dict(
+  page="rocketry", org="Dalhousie Rocketry", role="Lead Propulsion Engineer", dates="Sept 2026 – present",
+  title="Two-stage rocket: booster and motor integration", visual="rocket",
+  problem="Take the team from a 12,000 ft single-stage flight to a two-stage vehicle reaching 35,000 ft at Mach 1.7.",
+  constraints=["Pro75 and Pro54 motors held secure through boost, staging and recovery", "Mach 1.7 loads", "Fit within the shared airframe"],
+  solution=["Booster stage designed in Onshape", "Bulkheads, motor mounts and motor support structure", "Motor handling and assembly procedures"],
+  result="In the initial design proposal phase, preparing for the Launch Canada critical design review. The bulkhead design and motor support structure are being modelled in Onshape around the Pro75 and Pro54, with flight results to follow against the 35,000 ft, Mach 1.7 target."),
+"chrima": dict(
+  page="work", org="Chrima", role="Manufacturing Systems Specialist", dates="Summer 2026",
+  title="On-floor weld inspection with optical metrology", visual="chrima",
+  problem="Weld checks on awkward geometry had to queue at the metrology department, delaying rework decisions.",
+  constraints=["Hard-to-measure geometry", "Scans picked up the surface the part sat on", "Run by weld managers, not metrology staff", "Delivered within one work term"],
+  solution=["Integrated a Revopoint TrackIt tracker and scanner", "Designed and built highly reflective support pins the scanner barely registers, separating the part from the table", "Scanning fixtures, SOPs and staff training"],
+  result="Weld managers now scan awkward geometry on the floor and decide on rework themselves, without queuing parts at metrology. Reflective support pins remove table noise from each scan, making scans faster and more accurate."),
+"robotweld": dict(page="work", org="Chrima", role="Manufacturing Systems Specialist", dates="Summer 2026",
+  title="Robotic welding cell: upgrade and integration", visual="robotweld",
+  problem="The robotic welding cell was upgraded to improve weld quality, as part of the shop's modernization project.",
+  constraints=["Custom-built FANUC robot", "Third-party Fronius welding package", "Brought into a working production shop"],
+  solution=["Fronius welder fitted to the robot", "Wire cutter and nozzle cleaner added", "Helped with the upgrade and integration"],
+  result="After the upgrade, the FANUC robot runs full weld cycles on the fixture table using the Fronius power source. The wire cutter and nozzle cleaner trim the wire and clear spatter between welds, so each arc starts from the same condition."),
+"milton": dict(page="work", org="Milton Ivy League", role="Co-Founder", dates="Feb 2023 – present",
+  title="Founding an adult athletic league: AI client assistant development and integration", visual="milton",
+  first="Overview",
+  problem="An adult recreational hockey league in Milton, Ontario, founded in 2023 and grown to 220 players by more than doubling each year. To manage growth, we integrated Conrad, an AI assistant built into our systems. Players can ask it anything from who to contact to scheduling, and Conrad handles all check-in interactions and guides players on where to go on game day.",
+  constraints=["Small staff", "Fixed operating budget", "Error-prone manual records", "220 players arriving across game nights", "Unreliable Wi-Fi at the rink"],
+  solution=["Online player statistics system", "Built Conrad, an AI client assistant that runs fully offline on a Raspberry Pi with a check-in desktop", "Players sign in with personal codes and are shown their dressing room and rink", "Automatic registration, with staff checking who has and hasn't registered", "First-aid stock tracking: staff log an item as used and Conrad reports what is left"],
+  result="The league grew to 220 players in two years, more than doubling each year, with fewer administrative errors once statistics moved online. At the playoff tournament, Conrad's self check-in saved about 20 hours of labour across three staff compared with the year before."),
+"f150": dict(
+  page="projects", org="Personal", role="Restoration", dates="Feb 2024 – Jun 2025",
+  title="1992 Ford F-150: full restoration", visual="f150",
+  problem="Restore a 1992 F-150 that had worn bodywork, leaking gaskets, an unstable idle on the 300 (4.9L) inline-six and a failing brake system.",
+  constraints=["Ford Factory Service Manual tolerances and torque specs", "OEM parts for the brakes"],
+  solution=["Valve cover gasket, injectors, ignition service and full fluid flush", "Full brake system rebuild: rotors, calipers, pads, lines, bleed", "Bodywork, primer and a full repaint"],
+  result="The 300 inline-six now idles steadily with a sealed valve cover, clean injectors and a serviced ignition system. The brakes were rebuilt to Ford service manual specs with new rotors, calipers, pads and lines, and the repainted truck is back on the road."),
+"outboard": dict(page="projects", org="Personal", role="Rebuild", dates="Two-stroke outboard",
+  title="1990 Johnson 40 hp outboard: powerhead rebuild", visual="outboard",
+  problem="Rebuild the powerhead and remove the VRO oil injection system to prevent engine seizure.",
+  constraints=["30-plus-year-old two-stroke", "Engine had to run reliably before sale"],
+  solution=["Full powerhead rebuild with new piston rings", "Cylinders reconditioned", "VRO removed in favour of premixed fuel"],
+  result="With new piston rings and reconditioned cylinders, the powerhead ran reliably again. The VRO was removed in favour of premixed fuel, and the motor was sold in better working condition."),
+}
+ORDER = ["chrima", "robotweld", "rocketry", "milton", "outboard", "f150"]  # home page panels, strongest for recruiters first; first and last span the full width
