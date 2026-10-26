@@ -35,11 +35,5 @@ CASES = {
   constraints=["Ford Factory Service Manual tolerances and torque specs", "OEM parts for the brakes"],
   solution=["Valve cover gasket, injectors, ignition service and full fluid flush", "Full brake system rebuild: rotors, calipers, pads, lines, bleed", "Bodywork, primer and a full repaint"],
   result="The 300 inline-six now idles steadily with a sealed valve cover, clean injectors and a serviced ignition system. The brakes were rebuilt to Ford service manual specs with new rotors, calipers, pads and lines, and the repainted truck is back on the road."),
-"outboard": dict(page="projects", org="Personal", role="Rebuild", dates="Two-stroke outboard",
-  title="1990 Johnson 40 hp outboard: powerhead rebuild", visual="outboard",
-  problem="Rebuild the powerhead and remove the VRO oil injection system to prevent engine seizure.",
-  constraints=["30-plus-year-old two-stroke", "Engine had to run reliably before sale"],
-  solution=["Full powerhead rebuild with new piston rings", "Cylinders reconditioned", "VRO removed in favour of premixed fuel"],
-  result="With new piston rings and reconditioned cylinders, the powerhead ran reliably again. The VRO was removed in favour of premixed fuel, and the motor was sold in better working condition."),
 }
-ORDER = ["chrima", "robotweld", "rocketry", "milton", "outboard", "f150"]  # home page panels, strongest for recruiters first; first and last span the full width
+ORDER = ["chrima", "robotweld", "rocketry", "milton", "f150"]  # home page panels, strongest for recruiters first; first spans the full width

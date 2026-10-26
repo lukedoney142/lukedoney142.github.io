@@ -41,8 +41,6 @@ def visual(key, cls="visual"):
         return f'<div class="{cls}"><img src="assets/img/f150-finished.jpg" alt="The finished 1992 Ford F-150 at sunset" width="1242" height="932" loading="lazy"></div>'
     if v == "robotweld":
         return f'<div class="{cls}"><img src="assets/img/robot-weld.jpg" alt="Close-up of a robotic weld bead on steel tube" width="1050" height="1400" loading="lazy" style="object-position: 50% 55%"></div>'
-    if v == "outboard":
-        return f'<div class="{cls}"><img src="assets/img/outboard.jpg" alt="The Johnson 40 hp powerhead with its cylinders exposed" width="966" height="1180" loading="lazy" style="object-position: 50% 40%"></div>'
     if v == "conrad":
         return f'<div class="{cls} type" aria-hidden="true"><div><strong class="wide">Conrad</strong><span class="label">AI assistant · self check-in</span></div></div>'
     if v == "milton":
@@ -152,7 +150,7 @@ def sub(fn, title, eyebrow, keys, extra=""):
     open(f"{OUT}/{fn}", "w").write(page(fn, f"{title} · Luke Doney", f"Luke Doney: {title.lower()}.", body))
 
 sub("work.html", "Work", "Experience", ["robotweld", "chrima", "milton"])
-sub("projects.html", "Projects", "Independent work", ["f150", "outboard"])
+sub("projects.html", "Projects", "Independent work", ["f150"])
 creds = '''
 <section id="flight" class="flush">
   <div class="wrap">
